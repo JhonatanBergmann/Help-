@@ -44,7 +44,7 @@ Foram usadas essa tecnologias:
 ## ***</>*** Como usar o código?
 1. Instale o **Yarn** em seu computador
 1. Instale o **NodeJs** na versão >= 12.0
-1. Clone este repositório `git clone https://github.com/JhonatanBergmann/Help.git`
+1. Clone este repositório `git clone https://github.com/JhonatanBergmann/help.git`
 
 ### ⚙️ Backend
 1. Acesse a pasta *backend* e dê o comando `yarn install`
