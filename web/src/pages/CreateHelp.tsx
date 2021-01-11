@@ -1,15 +1,15 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
-import { Map, Marker, TileLayer } from 'react-leaflet';
-import { LeafletMouseEvent  } from 'leaflet'
-import { useHistory } from "react-router-dom";
+import React, { ChangeEvent, FormEvent, useState } from "react"
+import { Map as MapContainer, Marker, TileLayer } from 'react-leaflet'
+import { LeafletMouseEvent } from 'leaflet'
+import { useHistory } from "react-router-dom"
 
-import { FiPlus } from "react-icons/fi";
+import { FiPlus } from "react-icons/fi"
 
-import Sidebar from "../components/Sidebar";
-import mapIcon from "../utils/mapIcon";
-import api from "../services/api";
+import Sidebar from "../components/Sidebar"
+import mapIcon from "../utils/mapIcon"
+import api from "../services/api"
 
-import '../styles/pages/create-help.css';
+import '../styles/pages/create-help.css'
 
 export default function CreateHelp() {
   const history = useHistory()
@@ -24,94 +24,87 @@ export default function CreateHelp() {
   function handleMapClick(event: LeafletMouseEvent) {
     const { lat, lng } = event.latlng
 
-    setPosition({ 
+    setPosition({
       latitude: lat,
       longitude: lng
     })
   }
 
-function handleSelectImages(event: ChangeEvent<HTMLInputElement>) {
-  if (!event.target.files) {
-    return
+  function handleSelectImages(event: ChangeEvent<HTMLInputElement>) {
+    if (!event.target.files) {
+      return
+    }
+
+    const selectedImages = Array.from(event.target.files)
+
+    setImages(selectedImages)
+
+    const selectedImagesPreview = selectedImages.map(image => {
+      return URL.createObjectURL(image)
+    })
+
+    setPreViewImages(selectedImagesPreview)
   }
 
-  const selectedImages = Array.from(event.target.files)
+  async function handleSubmit(event: FormEvent) {
+    event.preventDefault()
 
-  setImages(selectedImages)
+    const { latitude, longitude } = position
 
-  const selectedImagesPreview = selectedImages.map(image => {
-    return URL.createObjectURL(image)
-  })
+    const data = new FormData()
 
-  setPreViewImages(selectedImagesPreview)
-}
+    data.append('name', name)
+    data.append('about', about)
+    data.append('latitude', String(latitude))
+    data.append('longitude', String(longitude))
 
-async function handleSubmit(event: FormEvent) {
-  event.preventDefault()
+    images.forEach(image => {
+      data.append('images', image)
+    })
 
-  const { latitude, longitude } = position
+    await api.post('helps', data)
 
-  const data = new FormData()
-
-  data.append('name', name)
-  data.append('about', about)
-  data.append('latitude', String(latitude))
-  data.append('longitude', String(longitude))
-
-  images.forEach(image => {
-    data.append('images', image)
-  })
-
-  await api.post('helps', data)
-
-  history.push('/app')
-}
+    history.push('/app')
+  }
 
   return (
     <div id="page-create-help">
       <Sidebar />
-
       <main>
         <form onSubmit={handleSubmit} className="create-help-form">
           <fieldset>
             <legend>Cadastro</legend>
 
-            <Map 
-              center={[-30.029941,-51.2395647]}
+            <MapContainer
+              center={[-30.029941, -51.2395647]}
               zoom={15}
               style={{ width: '100%', height: 280 }}
-              onClick={handleMapClick}
-            >
-              <TileLayer 
-                url='https://a.tile.openstreetmap.org/{z}/{x}/{y}.png'
-              />
+              onClick={handleMapClick}>
 
-              { position.latitude != 0 && (
+              <TileLayer url='https://a.tile.openstreetmap.org/{z}/{x}/{y}.png' />
+
+              {position.latitude !== 0 && (
                 <Marker
                   interactive={false}
                   icon={mapIcon}
-                  position={[position.latitude, position.longitude]}
-                />
-              )}
-            </Map>
+                  position={[position.latitude, position.longitude]} />)}
+            </MapContainer>
 
             <div className="input-block">
               <label htmlFor="name">Nome</label>
-              <input 
-                id="name" 
-                value={name} 
-                onChange={event => setName(event.target.value)} 
-              />
+              <input
+                id="name"
+                value={name}
+                onChange={event => setName(event.target.value)} />
             </div>
 
             <div className="input-block">
               <label htmlFor="about">Sobre <span>Máximo de 300 caracteres</span></label>
-              <textarea 
-                id="name" 
+              <textarea
+                id="name"
                 maxLength={300}
-                value={about} 
-                onChange={event => setAbout(event.target.value)}  
-              />
+                value={about}
+                onChange={event => setAbout(event.target.value)} />
             </div>
 
             <div className="input-block">

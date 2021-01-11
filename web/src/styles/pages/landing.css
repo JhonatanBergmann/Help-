@@ -2,7 +2,6 @@
     width: 100vw;
     height: 100vh;
     background: linear-gradient(329.54deg, #70a6f7 0%, #edf3fb 100%);
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,18 +9,14 @@
 
 #page-landing .content-wrapper {
     position: relative;
-
     width: 100%;
     max-width: 1100px;
-
     height: 100%;
     max-height: 680px;
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-
     background: url(../../imgs/landing.png) no-repeat 80% center;
     background-size: 60%;
 }
@@ -30,7 +25,7 @@
     width: 25%;
 }
 
-#page-landing .content-wrapper main  {
+#page-landing .content-wrapper main {
     max-width: 350px;
 }
 
@@ -51,13 +46,10 @@
     position: absolute;
     right: 0;
     top: 0;
-
     font-size: 24px;
     line-height: 34px;
-
     display: flex;
     flex-direction: column;
-
     text-align: right;
 }
 
@@ -69,16 +61,13 @@
     position: absolute;
     right: 0;
     bottom: 0;
-
     width: 80px;
     height: 80px;
     background: #213f7a;
     border-radius: 30px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-    
     transition: background-color 0.2s;
 }
 

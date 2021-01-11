@@ -10,15 +10,13 @@
 .help-details {
   width: 700px;
   margin: 64px auto;
-
   background: #FFFFFF;
   border: 1px solid #D3E2E5;
   border-radius: 20px;
-
   overflow: hidden;
 }
 
-.help-details > img {
+.help-details>img {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -26,12 +24,11 @@
 
 .help-details .images {
   display: grid;
-  grid-template-columns: repeat(6 ,1fr);
+  grid-template-columns: repeat(6, 1fr);
   column-gap: 16px;
-
   margin: 16px 40px 0;
 }
- 
+
 .help-details .images button {
   border: 0;
   height: 88px;
@@ -40,7 +37,6 @@
   border-radius: 20px;
   overflow: hidden;
   outline: none;
-  
   opacity: 0.6;
 }
 
@@ -52,7 +48,6 @@
   width: 100%;
   height: 88px;
   object-fit: cover;
-  
 }
 
 .help-details .help-details-content {
@@ -111,7 +106,6 @@
 
 .help-details .help-details-content .open-details {
   margin-top: 24px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
@@ -148,7 +142,6 @@
 
 .help-details .help-details-content button.contact-button {
   margin-top: 64px;
-
   width: 100%;
   height: 64px;
   border: 0;
@@ -157,11 +150,9 @@
   border-radius: 20px;
   color: #FFFFFF;
   font-weight: 800;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   transition: background-color 0.2s;
 }
 
