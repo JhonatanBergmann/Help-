@@ -3,13 +3,13 @@ import Help from './Help'
 
 @Entity('images')
 export default class Image {
-    @PrimaryGeneratedColumn('increment')
-    id: number
+  @PrimaryGeneratedColumn('increment')
+  id: number
 
-    @Column()
-    path: string
+  @Column()
+  path: string
 
-    @ManyToOne(() => Help, help => help.images)
-    @JoinColumn({ name: 'help_id' })
-    help: Help
+  @ManyToOne(() => Help, help => help.images)
+  @JoinColumn({ name: 'help_id' })
+  help: Help
 }

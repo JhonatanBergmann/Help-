@@ -3,24 +3,24 @@ import Image from './Image'
 
 @Entity('helps')
 export default class Help {
-    @PrimaryGeneratedColumn('increment')
-    id: number
+  @PrimaryGeneratedColumn('increment')
+  id: number
 
-    @Column()
-    name: string
+  @Column()
+  name: string
 
-    @Column()
-    latitude: number
+  @Column()
+  latitude: number
 
-    @Column()
-    longitude: number
+  @Column()
+  longitude: number
 
-    @Column()
-    about: string
+  @Column()
+  about: string
 
-    @OneToMany(() => Image, image => image.help, {
-        cascade: ['insert', 'update']
-    })
-    @JoinColumn({ name: 'help_id' })
-    images: Image[]
+  @OneToMany(() => Image, image => image.help, {
+    cascade: ['insert', 'update']
+  })
+  @JoinColumn({ name: 'help_id' })
+  images: Image[]
 }
