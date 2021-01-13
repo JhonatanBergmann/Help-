@@ -31,7 +31,7 @@ Projeto para ajudar pessoas em situação de rua na cidade de Porto Alegre, pode
 </p>
 
 ## 🌐 Tecnologias Usadas
-Foram usadas essa tecnologias:
+Foram usadas essas tecnologias:
 
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
