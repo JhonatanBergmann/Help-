@@ -21,7 +21,7 @@
 
 ## 📅 Sobre
 
-Projeto para ajudar pessoas em situação de rua na cidade de Porto Alegre, podendo adicionar uma marcação (Help!) no mapa indicando pessoas que estão com necessidades, ficará marcado no mapa a posição das pessoas quando cadastrado, quem tiver interesse de ajudar alguém e ter um dia mais feliz é simplesmente clicar no botão de ver rotas no Google Maps.
+Projeto para ajudar pessoas em situação de rua na cidade de Porto Alegre, podendo adicionar uma marcação no mapa (Help!) indicando pessoas que estão com necessidades, ficará marcado no mapa a posição das pessoas quando cadastrado, quem tiver interesse de ajudar alguém e ter um dia mais feliz, basta clicar no botão de ver rotas no Google Maps e ir até o necessitado.
 
 <p align="center">
   <img src="forReadme/web.gif" alt="Demo" >
