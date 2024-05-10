@@ -39,12 +39,12 @@ Foram usadas essas tecnologias:
 - [Yarn](https://yarnpkg.com/)
 - [Expo](https://expo.io/)
 
-*Foram usados outros Frameworks no projeto, mas esses são os principais.*
+*Foram usados outros, mas esses são os principais.*
 
 ## ***</>*** Como usar o código?
 1. Instale o **Yarn** em seu computador
 1. Instale o **NodeJs** na versão >= 12.0
-1. Clone este repositório `git clone https://github.com/JhonatanBergmann/help.git`
+1. Clone este repositório `git clone https://github.com/jhonbergmann/help.git`
 
 ### ⚙️ Backend
 1. Acesse a pasta *backend* e dê o comando `yarn install`
