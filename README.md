@@ -21,7 +21,7 @@
 
 ## 📅 Sobre
 
-Projeto para ajudar pessoas em situação de rua na cidade de Porto Alegre, podendo adicionar uma marcação no mapa (Help!) indicando pessoas que estão com necessidades, ficará marcado no mapa a posição das pessoas quando cadastrado, quem tiver interesse de ajudar alguém e ter um dia mais feliz, basta clicar no botão de ver rotas no Google Maps e ir até o necessitado.
+Aplicação para ajudar pessoas em situação de rua, podendo adicionar uma marcação no mapa (Help!) indicando pessoas que estão com passando por dificuldades, ficará marcado no mapa a posição das pessoas quando cadastrado, também podendo ser direcionado diretamente para o endereço com redirecionamento para o aplicativo de GPS.
 
 <p align="center">
   <img src="forReadme/web.gif" alt="Demo" >
@@ -36,7 +36,6 @@ Foram usadas essas tecnologias:
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [Typescript](https://www.typescriptlang.org/)
-- [Yarn](https://yarnpkg.com/)
 - [Expo](https://expo.io/)
 
 *Foram usados outros, mas esses são os principais.*
