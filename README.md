@@ -35,10 +35,9 @@ Foram usadas essas tecnologias:
 
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
-- [Typescript](https://www.typescriptlang.org/)
 - [Expo](https://expo.io/)
-
-*Foram usados outros, mas esses são os principais.*
+- [Node](https://nodejs.org/en)
+- [Typescript](https://www.typescriptlang.org/)
 
 ## ***</>*** Como usar o código?
 1. Instale o **Yarn** em seu computador
