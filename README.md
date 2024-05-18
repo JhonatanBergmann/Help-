@@ -21,7 +21,7 @@
 
 ## 📅 Sobre
 
-Aplicação para ajudar pessoas em situação de rua, podendo adicionar uma marcação no mapa (Help!) indicando pessoas que estão com passando por dificuldades, ficará marcado no mapa a posição das pessoas quando cadastrado, também podendo ser direcionado diretamente para o endereço com redirecionamento para o aplicativo de GPS.
+Aplicação para ajudar pessoas em situação de rua, podendo adicionar uma marcação no mapa (Help!) indicando pessoas que estão passando por dificuldades, ficará marcado no mapa a posição das pessoas quando cadastrado, também podendo ser direcionado diretamente para o endereço com redirecionamento para o aplicativo de GPS.
 
 <p align="center">
   <img src="forReadme/web.gif" alt="Demo" >
