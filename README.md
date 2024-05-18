@@ -11,7 +11,7 @@
   <img alt="Github License" src="https://img.shields.io/github/license/JhonatanBergmann/Help" />
 </p>
 
-<p align="center">Projeto para ajudar pessoas em situação de rua</p>
+<p align="center">Bora ajudar pessoas em situação de rua!</p>
 
 <br>
 
