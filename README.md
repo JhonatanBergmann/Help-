@@ -11,7 +11,7 @@
   <img alt="Github License" src="https://img.shields.io/github/license/JhonatanBergmann/Help" />
 </p>
 
-<p align="center">Bora ajudar pessoas em situação de rua!</p>
+<p align="center">Bora ajudar pessoas em situação de rua!?</p>
 
 <br>
 
@@ -21,7 +21,7 @@
 
 ## 📅 Sobre
 
-Aplicação para ajudar pessoas em situação de rua, podendo adicionar uma marcação no mapa (Help!) indicando pessoas que estão passando por dificuldades, ficará marcado no mapa a posição das pessoas quando cadastrado, também podendo ser direcionado diretamente para o endereço com redirecionamento para o aplicativo de GPS.
+Aplicativo para ajudar pessoas em situação de rua, permitindo a adição de uma marcação no mapa ("Help!") que indica locais onde pessoas estão passando por dificuldades. Ao cadastrar uma posição, ela ficará visível no mapa, possibilitando o redirecionamento direto para o endereço utilizando um aplicativo de GPS.
 
 <p align="center">
   <img src="forReadme/web.gif" alt="Demo" >
@@ -30,7 +30,7 @@ Aplicação para ajudar pessoas em situação de rua, podendo adicionar uma marc
   <img src="forReadme/mobile.gif" alt="Demo" >
 </p>
 
-## 🌐 Tecnologias Usadas
+## 🌐 Tecnologias usadas
 Foram usadas essas tecnologias:
 
 - [React](https://pt-br.reactjs.org/)
